@@ -60,7 +60,7 @@ Status: Only power, data not working.
 
 ![](Images/WINCE_1.png)
 
-![](Images/WINCE_2.png.png)
+![](Images/WINCE_2.png)
 
 - [Dreamshell (Network -> Connect Ethernet -> Start FTP Server and/or Start HTTP Server)](https://github.com/DC-SWAT/DreamShell)
 
