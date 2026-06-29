@@ -20,17 +20,48 @@ Also you will need a [DreamShell](https://github.com/DC-SWAT/DreamShell) or home
 
 ### Schemes
 
-| DC SD Adapter V2 (pin) | SD Adapter for MicroSD + SD Sniffer | W5500 (Blue model) |
-| ---------------------- | ----------------------------------- | ------------------ |
-| GND (3)                | GND                                 | GND                |
-| RX (4)                 | DAT0                                | MISO               |
-| TX (5)                 | CMD                                 | MOSI               |
-| RTS (6)                | CD                                  | SCS                |
-| CTS (7)                | CLK                                 | SCLK               |
-| 3.3V (10)              | VCC                                 | 3.3V               |
+#### W5500 Ethernet Adapter (Blue model board)
 
-![](Images/Adapter.jpeg)
+| DC SD Adapter V2 (pin) | SD Adapter for MicroSD + SD Sniffer | W5500 (Blue model board) |
+| ---------------------- | ----------------------------------- | ------------------------ |
+| GND (3)                | GND                                 | GND                      |
+| RX (4)                 | DAT0                                | MISO                     |
+| TX (5)                 | CMD                                 | MOSI                     |
+| RTS (6)                | CD                                  | SCS                      |
+| CTS (7)                | CLK                                 | SCLK                     |
+| 3.3V (10)              | VCC                                 | 3.3V                     |
 
-You can test if it's working on Dreamshell by checking the options **Connect Ethernet**, **Start FTP Server** and **Start HTTP Server** on the **Network** section of a **DreamShell** build that supports it.
+Status: Power and data working.
+
+![](Images/Adapter1.jpeg)
+
+#### Lite W5500 Ethernet Adapter (Green model board)
+
+| DC SD Adapter V2 (pin) | SD Adapter for MicroSD + SD Sniffer | W5500 (Green model board) |
+| ---------------------- | ----------------------------------- | ------------------------- |
+| GND (3)                | GND                                 | GND                       |
+| RX (4)                 | DAT0                                | MISO                      |
+| TX (5)                 | CMD                                 | MOSI                      |
+| RTS (6)                | CD                                  | CS                        |
+| CTS (7)                | CLK                                 | SCK                       |
+| 3.3V (10)              | VCC                                 | V (3.3V)                  |
+
+Status: Only power, data not working.
+
+![](Images/Adapter2.jpeg)
+
+### Ways of Testing
+
+- [W5500 Tester CDI by JaderFox](./w5500_test.cdi)
+
+![](Images/JaderFox.png)
+
+- [Windows CE Dreamcast Community Edition (Network -> System Logs)](https://github.com/maximqaxd/wince-dc)
+
+![](Images/WINCE_1.png)
+
+![](Images/WINCE_2.png.png)
+
+- [Dreamshell (Network -> Connect Ethernet -> Start FTP Server and/or Start HTTP Server)](https://github.com/DC-SWAT/DreamShell)
 
 ![](Images/Dreamshell.jpeg)
